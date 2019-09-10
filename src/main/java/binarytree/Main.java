@@ -2,6 +2,7 @@ package binarytree;
 
 import binarytree.model.Route;
 import binarytree.model.Tree;
+import binarytree.parser.FileInputParser;
 import binarytree.parser.HardcodedInputParser;
 import binarytree.parser.InputParser;
 import binarytree.service.RouteFinderService;
@@ -13,8 +14,8 @@ import static binarytree.utils.RouteUtils.calculateRoutesSum;
 public class Main {
 
     public static void main(String[] args) {
-        //InputParser inputParser = new FileInputParser("input.txt");
-        InputParser inputParser = new HardcodedInputParser();
+        InputParser inputParser = new FileInputParser("input.txt");
+        //InputParser inputParser = new HardcodedInputParser();
 
         RouteFinderService routeFinderService = new RouteFinderService();
 
